@@ -1,23 +1,24 @@
-const MainContent = () => {
-    const playlists = [
-      { name: 'Pop Hits', description: 'Las mejores canciones pop del momento' },
-      { name: 'Relaxing Music', description: 'Relájate con estas canciones' },
-      // Agrega más playlists...
-    ];
+const categories = [
+    { name: 'Nuevos lanzamientos', color: 'bg-teal-600' },
+    { name: 'Charts', color: 'bg-purple-500' },
+    { name: 'Women\'s Voices', color: 'bg-pink-500' },
+    { name: 'Deezer Next', color: 'bg-purple-600' },
+    { name: 'Fiesta', color: 'bg-pink-600' },
+    { name: 'Hacer deporte', color: 'bg-blue-900' },
+    { name: 'Chill', color: 'bg-pink-500' },
+    { name: 'AnimeVerse', color: 'bg-blue-600' },
+    { name: 'Lofi', color: 'bg-green-600' },
+    { name: 'La Navidad', color: 'bg-red-600' }
+  ];
   
+  const MainContent = () => {
     return (
       <div className="flex-1 p-5 bg-gray-100">
-        <h2 className="text-2xl font-bold mb-4">Recomendaciones</h2>
-        <div className="grid grid-cols-4 gap-4">
-          {playlists.map((playlist, index) => (
-            <div key={index} className="bg-white p-3 rounded-lg shadow-md">
-              <img
-                src={`https://via.placeholder.com/150?text=${playlist.name}`}
-                alt={playlist.name}
-                className="mb-3 rounded-lg"
-              />
-              <h3 className="text-lg font-semibold">{playlist.name}</h3>
-              <p className="text-sm text-gray-500">{playlist.description}</p>
+        <h2 className="text-3xl font-bold mb-6">Todos los canales</h2>
+        <div className="grid grid-cols-3 gap-4">
+          {categories.map((category, index) => (
+            <div key={index} className={`${category.color} p-6 rounded-lg text-white flex items-center justify-center text-xl font-bold`}>
+              {category.name}
             </div>
           ))}
         </div>

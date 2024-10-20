@@ -1,20 +1,23 @@
-import { FaHome, FaSearch, FaMusic } from 'react-icons/fa';
+import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-screen bg-gray-900 text-white p-5">
-      <div className="text-2xl font-bold mb-10">Kodigo Music</div>
+    <div className="fixed top-0 left-0 h-screen w-64 bg-gray-900 text-white p-5 shadow-lg">
+      <div className="text-2xl font-bold mb-10 text-center">Kodigo Music</div>
       <ul className="space-y-6">
-        <li className="flex items-center space-x-3">
+        <li className="flex items-center space-x-3 p-2 hover:bg-gray-700 rounded-lg transition duration-300 ease-in-out">
           <FaHome /> <span>Inicio</span>
         </li>
-        <li className="flex items-center space-x-3">
-          <FaSearch /> <span>Buscar</span>
-        </li>
-        <li className="flex items-center space-x-3">
-          <FaMusic /> <span>Tu Biblioteca</span>
+        <li className="flex items-center space-x-3 p-2 hover:bg-gray-700 rounded-lg transition duration-300 ease-in-out">
+          <FaSearch /> <span>Explorar</span>
         </li>
       </ul>
+      <div className="mt-10">
+        <h3 className="text-white mb-4">Playlists</h3>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center">
+          <FaPlus className="mr-2" /> Crear una playlist
+        </button>
+      </div>
     </div>
   );
 };
