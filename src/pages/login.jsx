@@ -10,15 +10,7 @@ const Login = () => {
 
   return (
     <div className="login-split-container">
-      {/* Imagen del lado derecho */}
-      <div className="login-image-container">
-        <img
-          src="https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg" /* Reemplaza esta URL con la imagen que desees */
-          alt="Login Image"
-        />
-      </div>
-
-      {/* Formulario del lado izquierdo */}
+      {/* Formulario centrado */}
       <div className="login-form-container">
         <form onSubmit={handleSubmit(onSubmit)} className="login-form">
           {/* Campo de nombre de usuario */}

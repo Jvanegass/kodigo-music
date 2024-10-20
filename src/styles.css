@@ -3,15 +3,84 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #121212; /* Fondo oscuro */
-    color: white; /* Texto blanco */
+    background-color: #121212; /* Fondo oscuro como respaldo */
+    color: white;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
-  /* Contenedor principal */
-  .container {
+  /* Centrado del contenedor de login */
+  .login-split-container {
     display: flex;
-    height: 100vh; /* Ocupa toda la pantalla */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(5px); /* Efecto de difuminado para la imagen de fondo */
+  }
+  
+  /* Formulario centrado */
+  .login-form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para el formulario */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Ancho fijo del formulario */
+  }
+  
+  .login-form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .form-control::placeholder {
+    color: #aaa; /* Color del placeholder */
+  }
+  
+  .is-invalid {
+    border: 2px solid #E91E63; /* Color de borde de error */
+  }
+  
+  .error-message {
+    color: #E91E63;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #1DB954; /* Botón verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #1ed760; /* Hover del botón */
   }
   
   /* Sidebar */
@@ -199,90 +268,5 @@ body, html {
     50% {
       transform: scaleY(1.5); /* Altura máxima en el medio del ciclo */
     }
-  }
-  
-  /* Estilos para el formulario de inicio de sesión con imagen */
-  .login-split-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Estilos para el contenedor del formulario */
-  .login-form-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-  }
-  
-  .login-form {
-    background-color: #1e1e1e;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 80%; /* Para que el formulario no sea demasiado ancho */
-  }
-  
-  /* Estilos para el contenedor de la imagen */
-  .login-image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-  }
-  
-  .login-image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Estilos de campos de formulario */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  
-  .form-control::placeholder {
-    color: #aaa; /* Color del placeholder */
-  }
-  
-  .is-invalid {
-    border: 2px solid #E91E63; /* Color de borde de error */
-  }
-  
-  .error-message {
-    color: #E91E63;
-    margin-top: 5px;
-    font-size: 0.9rem;
-  }
-  
-  /* Estilos del botón de envío */
-  .btn-submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #1DB954; /* Botón verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-submit:hover {
-    background-color: #1ed760; /* Hover del botón */
   }
   
