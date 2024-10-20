@@ -13,11 +13,11 @@ const categories = [
   
   const MainContent = () => {
     return (
-      <div className="flex-1 p-5 bg-gray-100 ml-64 mt-16">
+      <div className="main-content">
         <h2 className="text-3xl font-bold mb-6">Todos los canales</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid-container">
           {categories.map((category, index) => (
-            <div key={index} className={`${category.color} p-6 rounded-lg text-white flex items-center justify-center text-xl font-bold`}>
+            <div key={index} className="grid-item">
               {category.name}
             </div>
           ))}

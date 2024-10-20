@@ -1,15 +1,17 @@
+import React from 'react';
 import Sidebar from '../components/sidebar';
 import Header from '../components/header';
 import MainContent from '../components/maincontent';
+import '../styles.css'; // Asegúrate de importar el archivo CSS
 
 const Home = () => {
   return (
-    <div className="flex h-screen">
+    <div className="container">
       {/* Sidebar Fijo */}
       <Sidebar />
       
-      {/* Contenido Principal */}
-      <div className="flex-1 flex flex-col">
+      {/* Contenedor Principal */}
+      <div className="main-container">
         <Header />
         <MainContent />
       </div>
