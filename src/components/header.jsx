@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="w-full bg-gray-800 text-white p-4 flex justify-between items-center">
+    <div className="w-full fixed top-0 bg-gray-800 text-white p-4 flex justify-between items-center z-10">
       {/* Barra de búsqueda */}
       <input
         type="text"

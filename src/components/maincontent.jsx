@@ -13,7 +13,7 @@ const categories = [
   
   const MainContent = () => {
     return (
-      <div className="flex-1 p-5 bg-gray-100">
+      <div className="flex-1 p-5 bg-gray-100 ml-64 mt-16">
         <h2 className="text-3xl font-bold mb-6">Todos los canales</h2>
         <div className="grid grid-cols-3 gap-4">
           {categories.map((category, index) => (
