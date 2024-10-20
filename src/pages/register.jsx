@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
-import '../styles.css'; // Importamos los estilos globales
+import '../styles.css';
 
 const Register = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = data => {
-    console.log('Datos enviados:', data); // Simulamos el envío de datos
+    console.log('Datos enviados:', data);
   };
 
   return (
@@ -33,7 +33,6 @@ const Register = () => {
             {errors.lastName && <span className="error-message">{errors.lastName.message}</span>}
           </div>
 
-          {/* Campo de correo electrónico */}
           <div className="form-group">
             <input
               {...register('email', {
@@ -49,7 +48,6 @@ const Register = () => {
             {errors.email && <span className="error-message">{errors.email.message}</span>}
           </div>
 
-          {/* Campo de contraseña */}
           <div className="form-group">
             <input
               {...register('password', {
@@ -66,7 +64,6 @@ const Register = () => {
             {errors.password && <span className="error-message">{errors.password.message}</span>}
           </div>
 
-          {/* Botón de envío */}
           <button type="submit" className="btn-submit">Registrarse</button>
         </form>
       </div>

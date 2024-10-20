@@ -1,19 +1,19 @@
 import { useForm } from 'react-hook-form';
-import '../styles.css'; // Importamos los estilos globales
+import '../styles.css'; 
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = data => {
-    console.log('Datos enviados:', data); // Simulamos el envío
+    console.log('Datos enviados:', data); 
   };
 
   return (
     <div className="login-split-container">
-      {/* Formulario centrado */}
+    
       <div className="login-form-container">
         <form onSubmit={handleSubmit(onSubmit)} className="login-form">
-          {/* Campo de nombre de usuario */}
+          
           <div className="form-group">
             <input
               {...register('username', { required: 'El nombre de usuario es obligatorio' })}
@@ -23,7 +23,6 @@ const Login = () => {
             {errors.username && <span className="error-message">{errors.username.message}</span>}
           </div>
           
-          {/* Campo de contraseña */}
           <div className="form-group">
             <input
               {...register('password', { required: 'La contraseña es obligatoria' })}
@@ -34,7 +33,6 @@ const Login = () => {
             {errors.password && <span className="error-message">{errors.password.message}</span>}
           </div>
           
-          {/* Botón de envío */}
           <button type="submit" className="btn-submit">Iniciar sesión</button>
         </form>
       </div>

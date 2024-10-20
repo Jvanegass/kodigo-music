@@ -23,7 +23,6 @@ const categories = [
           ))}
         </div>
         
-        {/* Ecualizador animado */}
         <div className="equalizer">
           <div className="equalizer-bar"></div>
           <div className="equalizer-bar"></div>

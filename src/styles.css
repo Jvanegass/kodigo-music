@@ -1,4 +1,4 @@
-/* Estilos globales */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@ body, html {
   display: flex;
 }
 
-/* Sidebar */
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
-  width: 250px; /* Ancho fijo */
+  height: 100vh; 
+  width: 250px; 
   background-color: #000000;
   padding: 20px;
   color: white;
@@ -66,7 +66,7 @@ button:hover {
 .header {
   position: fixed;
   top: 0;
-  left: 250px; /* Margen izquierdo igual al ancho del sidebar */
+  left: 250px; 
   right: 0;
   height: 60px;
   background-color: #000000;
@@ -105,11 +105,11 @@ button:hover {
   background-color: #1DB954;
 }
 
-/* Main Content */
+
 .main-content {
   width: 100%;
-  margin-left: 315px; /* Desplaza el contenido para alinearlo con el sidebar */
-  margin-top: 60px;  /* Desplaza el contenido para alinearlo debajo del header */
+  margin-left: 315px;
+  margin-top: 60px;  
   padding: 20px;
   flex-grow: 1;
   background-color: #181818;
@@ -122,10 +122,10 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Grilla de categorías */
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
 }
 
@@ -145,7 +145,7 @@ h2 {
   transform: scale(1.05);
 }
 
-/* Estilos para el ecualizador */
+
 .equalizer {
   display: flex;
   justify-content: center;
@@ -199,23 +199,23 @@ h2 {
   }
 }
 
-/* Estilos específicos para el Login y Registro con imagen de fondo */
+
 .login-split-container, .register-split-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo */
+  background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px); /* Efecto de difuminado */
+  backdrop-filter: blur(5px); 
 }
 
-/* Formulario centrado (Login y Registro) */
+
 .login-form-container, .register-form-container {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.8); 
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
