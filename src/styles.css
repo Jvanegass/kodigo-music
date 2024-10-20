@@ -6,27 +6,27 @@ body, html {
     font-family: 'Arial', sans-serif;
   }
   
-  /* Estilos específicos para el login con imagen de fondo */
+  /* Estilos específicos para el Login con imagen de fondo */
   .login-split-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo para el login */
+    background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(5px); /* Efecto de difuminado para la imagen de fondo */
+    backdrop-filter: blur(5px); /* Efecto de difuminado */
   }
   
-  /* Formulario centrado para el login */
+  /* Formulario centrado */
   .login-form-container {
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Ancho fijo del formulario */
+    width: 400px;
   }
   
   .login-form {
@@ -49,11 +49,11 @@ body, html {
   }
   
   .form-control::placeholder {
-    color: #aaa; /* Color del placeholder */
+    color: #aaa;
   }
   
   .is-invalid {
-    border: 2px solid #E91E63; /* Color de borde de error */
+    border: 2px solid #E91E63;
   }
   
   .error-message {
@@ -65,7 +65,7 @@ body, html {
   .btn-submit {
     width: 100%;
     padding: 10px;
-    background-color: #1DB954; /* Botón verde */
+    background-color: #1DB954;
     color: white;
     border: none;
     border-radius: 5px;
@@ -75,7 +75,7 @@ body, html {
   }
   
   .btn-submit:hover {
-    background-color: #1ed760; /* Hover del botón */
+    background-color: #1ed760;
   }
   
   /* Sidebar */
@@ -117,7 +117,7 @@ body, html {
   button {
     width: 100%;
     padding: 10px;
-    background-color: #1DB954; /* Color verde similar a Spotify/Deezer */
+    background-color: #1DB954;
     color: white;
     border: none;
     border-radius: 5px;
@@ -133,10 +133,10 @@ body, html {
   .header {
     position: fixed;
     top: 0;
-    left: 250px; /* Margen izquierdo igual al ancho del sidebar */
+    left: 250px;
     right: 0;
     height: 60px;
-    background-color: #000000; /* Fondo oscuro */
+    background-color: #000000;
     color: white;
     display: flex;
     align-items: center;
@@ -155,7 +155,7 @@ body, html {
   }
   
   .header input::placeholder {
-    color: #aaa; /* Color del placeholder */
+    color: #aaa;
   }
   
   .header a {
@@ -169,16 +169,16 @@ body, html {
   }
   
   .header a:hover {
-    background-color: #1DB954; /* Efecto hover para los enlaces de sesión */
+    background-color: #1DB954;
   }
   
   /* Main Content */
   .main-content {
-    margin-left: 250px; /* Margen igual al ancho del sidebar */
-    margin-top: 60px;  /* Margen superior igual a la altura del header */
+    margin-left: 250px;
+    margin-top: 60px;
     padding: 20px;
     flex-grow: 1;
-    background-color: #181818; /* Fondo oscuro para el contenido principal */
+    background-color: #181818;
   }
   
   h2 {
@@ -191,12 +191,12 @@ body, html {
   /* Grilla de categorías */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   
   .grid-item {
-    background-color: #282828; /* Color de las tarjetas */
+    background-color: #282828;
     color: white;
     padding: 30px;
     text-align: center;
@@ -208,7 +208,7 @@ body, html {
   
   .grid-item:hover {
     background-color: #333;
-    transform: scale(1.05); /* Efecto de hover */
+    transform: scale(1.05);
   }
   
   /* Estilos para el ecualizador */
@@ -261,7 +261,7 @@ body, html {
       transform: scaleY(1);
     }
     50% {
-      transform: scaleY(1.5); /* Altura máxima en el medio del ciclo */
+      transform: scaleY(1.5);
     }
   }
   
