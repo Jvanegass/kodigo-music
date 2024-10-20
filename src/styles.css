@@ -107,7 +107,8 @@ body, html {
   
   /* Main Content */
   .main-content {
-    margin-left: 300px; /* Desplaza el contenido para alinearlo con el sidebar */
+    width: 100%;
+    margin-left: 315px; /* Desplaza el contenido para alinearlo con el sidebar */
     margin-top: 60px;  /* Desplaza el contenido para alinearlo debajo del header */
     padding: 20px;
     flex-grow: 1;
