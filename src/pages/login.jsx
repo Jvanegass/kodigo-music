@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import '../styles/styles.css'; // Importamos los estilos globales
+import '../styles.css'; // Importamos los estilos globales
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
