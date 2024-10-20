@@ -3,31 +3,26 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #121212; /* Fondo oscuro como respaldo */
-    color: white;
     font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   
-  /* Centrado del contenedor de login */
+  /* Estilos específicos para el login con imagen de fondo */
   .login-split-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-image: url('https://blog.symphoniclatino.com/wp-content/uploads/2019/05/Fotolia_45452813_Subscription_Monthly_L21.jpg'); /* Imagen de fondo para el login */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     backdrop-filter: blur(5px); /* Efecto de difuminado para la imagen de fondo */
   }
   
-  /* Formulario centrado */
+  /* Formulario centrado para el login */
   .login-form-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para el formulario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
