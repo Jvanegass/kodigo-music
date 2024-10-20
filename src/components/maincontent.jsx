@@ -2,7 +2,7 @@ const categories = [
     { name: 'Nuevos lanzamientos', color: '#1DB954' },
     { name: 'Charts', color: '#E91E63' },
     { name: 'Women\'s Voices', color: '#9C27B0' },
-    { name: 'Deezer Next', color: '#673AB7' },
+    { name: 'Kodigo Next', color: '#673AB7' },
     { name: 'Fiesta', color: '#FF5722' },
     { name: 'Hacer deporte', color: '#3F51B5' },
     { name: 'Chill', color: '#00BCD4' },
@@ -21,6 +21,17 @@ const categories = [
               {category.name}
             </div>
           ))}
+        </div>
+        
+        {/* Ecualizador animado */}
+        <div className="equalizer">
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
+          <div className="equalizer-bar"></div>
         </div>
       </div>
     );

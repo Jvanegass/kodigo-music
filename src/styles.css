@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Estilos globales */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,23 +8,22 @@ body, html {
     font-family: 'Arial', sans-serif;
   }
   
-  /* Contenedor general con Flexbox */
+  /* Contenedor principal */
   .container {
     display: flex;
-    height: 100vh;
+    height: 100vh; /* Ocupa toda la pantalla */
   }
   
   /* Sidebar */
   .sidebar {
-    width: 250px; /* Ancho fijo del sidebar */
-    background-color: #000000; /* Fondo oscuro del sidebar */
+    width: 250px;
+    background-color: #000000;
     padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
   }
   
-  /* Título y elementos del Sidebar */
   .sidebar h3, .sidebar ul li {
     margin-bottom: 20px;
   }
@@ -40,21 +39,21 @@ body, html {
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease;
   }
   
   .sidebar ul li:hover {
-    background-color: #282828; /* Efecto hover */
+    background-color: #282828;
   }
   
   .sidebar ul li span {
     margin-left: 10px;
   }
   
-  /* Botón en el Sidebar */
   button {
     width: 100%;
     padding: 10px;
-    background-color: #1DB954; /* Color similar a Deezer/Spotify */
+    background-color: #1DB954; /* Color verde similar a Spotify/Deezer */
     color: white;
     border: none;
     border-radius: 5px;
@@ -82,9 +81,8 @@ body, html {
     z-index: 100;
   }
   
-  /* Estilo de la barra de búsqueda */
   .header input {
-    background-color: #333; /* Fondo de la barra */
+    background-color: #333;
     color: white;
     border: none;
     padding: 10px;
@@ -96,7 +94,6 @@ body, html {
     color: #aaa; /* Color del placeholder */
   }
   
-  /* Estilo de los enlaces en el header */
   .header a {
     margin-left: 20px;
     color: white;
@@ -108,16 +105,16 @@ body, html {
   }
   
   .header a:hover {
-    background-color: #1DB954; /* Efecto hover */
+    background-color: #1DB954; /* Efecto hover para los enlaces de sesión */
   }
   
   /* Main Content */
   .main-content {
-    margin-left: 250px; /* Desplazamiento por el ancho del sidebar */
-    margin-top: 60px; /* Desplazamiento por la altura del header */
+    margin-left: 250px; /* Margen igual al ancho del sidebar */
+    margin-top: 60px;  /* Margen superior igual a la altura del header */
     padding: 20px;
     flex-grow: 1;
-    background-color: #181818; /* Fondo oscuro para el contenido */
+    background-color: #181818; /* Fondo oscuro para el contenido principal */
   }
   
   h2 {
@@ -130,13 +127,12 @@ body, html {
   /* Grilla de categorías */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas para adaptarse al estilo de Deezer */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 20px;
   }
   
-  /* Estilo de los ítems en la grilla */
   .grid-item {
-    background-color: #282828;
+    background-color: #282828; /* Color de las tarjetas */
     color: white;
     padding: 30px;
     text-align: center;
@@ -146,9 +142,62 @@ body, html {
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  /* Efecto hover en los ítems de la grilla */
   .grid-item:hover {
     background-color: #333;
-    transform: scale(1.05); /* Efecto de escala */
+    transform: scale(1.05); /* Efecto de hover */
+  }
+  
+  /* Estilos para el ecualizador */
+  .equalizer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
+    height: 100px;
+  }
+  
+  .equalizer-bar {
+    width: 10px;
+    margin: 0 5px;
+    background-color: #1DB954;
+    animation: bounce 1s infinite ease-in-out;
+  }
+  
+  .equalizer-bar:nth-child(1) {
+    height: 50%;
+    animation-delay: 0s;
+  }
+  .equalizer-bar:nth-child(2) {
+    height: 75%;
+    animation-delay: 0.1s;
+  }
+  .equalizer-bar:nth-child(3) {
+    height: 60%;
+    animation-delay: 0.2s;
+  }
+  .equalizer-bar:nth-child(4) {
+    height: 90%;
+    animation-delay: 0.3s;
+  }
+  .equalizer-bar:nth-child(5) {
+    height: 65%;
+    animation-delay: 0.4s;
+  }
+  .equalizer-bar:nth-child(6) {
+    height: 80%;
+    animation-delay: 0.5s;
+  }
+  .equalizer-bar:nth-child(7) {
+    height: 55%;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(1.5); /* Altura máxima en el medio del ciclo */
+    }
   }
   
