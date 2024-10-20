@@ -201,21 +201,19 @@ body, html {
     }
   }
   
-  /* Estilos para el formulario de inicio de sesión */
-  .login-container {
+  /* Estilos para el formulario de inicio de sesión con imagen */
+  .login-split-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  .login-form-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #121212; /* Fondo oscuro */
-  }
-  
-  .login-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
-    text-align: center;
+    background-color: #121212;
   }
   
   .login-form {
@@ -223,8 +221,25 @@ body, html {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Para que el formulario no sea demasiado ancho */
   }
   
+  /* Estilos para el contenedor de la imagen */
+  .login-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  }
+  
+  .login-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilos de campos de formulario */
   .form-group {
     margin-bottom: 20px;
   }
@@ -254,6 +269,7 @@ body, html {
     font-size: 0.9rem;
   }
   
+  /* Estilos del botón de envío */
   .btn-submit {
     width: 100%;
     padding: 10px;
