@@ -201,3 +201,72 @@ body, html {
     }
   }
   
+  /* Estilos para el formulario de inicio de sesión */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Fondo oscuro */
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-form {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .form-control::placeholder {
+    color: #aaa; /* Color del placeholder */
+  }
+  
+  .is-invalid {
+    border: 2px solid #E91E63; /* Color de borde de error */
+  }
+  
+  .error-message {
+    color: #E91E63;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #1DB954; /* Botón verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #1ed760; /* Hover del botón */
+  }
+  
