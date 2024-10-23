@@ -13,7 +13,7 @@ const categories = [
   
   const MainContent = () => {
     return (
-      <div className="main-content">
+      <section className="main-content">
         <h2 className="text-3xl font-bold mb-6">Todos los canales</h2>
         <div className="grid-container">
           {categories.map((category, index) => (
@@ -32,7 +32,7 @@ const categories = [
           <div className="equalizer-bar"></div>
           <div className="equalizer-bar"></div>
         </div>
-      </div>
+      </section>
     );
   };
   

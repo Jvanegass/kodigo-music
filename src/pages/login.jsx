@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import '../styles.css'; 
+import '../index.css'; 
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -9,9 +9,9 @@ const Login = () => {
   };
 
   return (
-    <div className="login-split-container">
+    <section className="login-split-container">
     
-      <div className="login-form-container">
+      <section className="login-form-container">
         <form onSubmit={handleSubmit(onSubmit)} className="login-form">
           
           <div className="form-group">
@@ -35,8 +35,8 @@ const Login = () => {
           
           <button type="submit" className="btn-submit">Iniciar sesión</button>
         </form>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

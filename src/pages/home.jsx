@@ -2,18 +2,19 @@ import React from 'react';
 import Sidebar from '../components/sidebar';
 import Header from '../components/header';
 import MainContent from '../components/maincontent';
-import '../styles.css'; 
+import '../index.css'; 
 
 const Home = () => {
   return (
-    <div className="container">
-      <Sidebar />
+    <section className="container">
+      <Header />
       
-      <div className="main-container">
-        <Header />
+      
+      <section className="main-container">
+        <Sidebar />
         <MainContent />
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <section className="sidebar">
       <div className="text-2xl font-bold mb-10">Kodigo Music</div>
       <ul className="space-y-6">
         <li className="flex items-center space-x-3 p-2">
@@ -18,7 +18,7 @@ const Sidebar = () => {
           <FaPlus className="mr-2" /> Crear una playlist
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
