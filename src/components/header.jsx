@@ -10,8 +10,8 @@ const Header = () => {
         style={{ width: '60%' }}
       />
       <div>
-        <Link to="/login" className="bg-transparent text-white">Iniciar sesión</Link>
-        <Link to="/register" className="bg-purple-600 px-4 py-2 rounded-lg text-white ml-4">Registrarse</Link>
+        <Link to="/login" className="btn bg-transparent text-white">Iniciar sesión</Link>
+        <Link to="/register" className="btn bg-purple-600 px-4 py-2 rounded-lg text-white ml-4">Registrarse</Link>
       </div>
     </header>
   );

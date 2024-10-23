@@ -359,11 +359,16 @@ h2 {
     position: relative;
     display: block;
     margin: 0;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     width: 100%;
   }
 
+  header .btn{
+    margin-left: 15%;
+  }
+
   header input {
+    margin-left: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
@@ -403,7 +408,7 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
   .main-content {
@@ -412,7 +417,7 @@ button {
   }
 
   .main-content h2{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .grid-container {
@@ -424,12 +429,31 @@ button {
   .grid-item {
     padding: 5%;
     border-radius: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 }
 
-@media (min-width: 601px) and (max-width: 1023px) {}
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  header {
+    position: relative;
+    display: flex;
+    margin: 0;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  header .btn{
+    width: 10px;
+  }
+
+  header input {
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
 
 @media (min-width: 1024px) and (max-width: 1370px) {}
