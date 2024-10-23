@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  height: 100%;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -23,13 +23,16 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   height: 100%;
-  margin: 0 auto;
-  display: flex;
-  place-items: center;
-  overflow: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -105,6 +108,7 @@ header a:hover {
   top: 10%;
   height: 100%;
   width: 15%;
+  min-width: 200px;
   background-color: #000000;
   padding: 20px;
   color: white;
@@ -155,9 +159,8 @@ button:hover {
 }
 
 .main-content {
-  width: 100%;
-  margin-left: 30%;
-  margin-top: 60px;
+  width: calc(100% - 15%);
+  margin: 5% auto 0 15%; /* Centrar en la pantalla */
   padding: 20px;
   flex-grow: 1;
 }
@@ -172,7 +175,7 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
   gap: 20px;
 }
 
@@ -346,3 +349,87 @@ h2 {
   }
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+
+  body{
+    display: block;
+  }
+
+  header {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  header input {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .sidebar {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .sidebar h3,
+.sidebar ul li {
+  margin-bottom: 5%;
+  font-size: 0.8rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 1%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  align-items: center;
+}
+
+.sidebar ul li span {
+  margin-left: 10px;
+}
+
+button {
+  padding: 5%;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.5rem;
+}
+
+  .main-content {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .main-content h2{
+    font-size: 0.8rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .grid-item {
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {}
+
+@media (min-width: 1024px) and (max-width: 1370px) {}
